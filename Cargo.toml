@@ -1,25 +1,27 @@
 [package]
 name = "bevy_mod_raycast"
 version = "0.2.2"
-authors = ["Aevyrie <aevyrie@gmail.com>"]
+authors = ["Aevyrie <aevyrie@gmail.com>", "Hypercubed <jbproductions364@gmail.com>"]
 edition = "2018"
 license = "MIT"
 description = "Ray Casting for the Bevy Engine."
-repository = "https://github.com/aevyrie/bevy_mod_raycast/"
+repository = "https://github.com/hypercubed-music/bevy_mod_raycast/"
 keywords = ["gamedev", "graphics", "bevy", "3d", "raycast"]
 categories = ["game-engines", "rendering"]
 
 [dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", version = "0.5", default-features = false, features = ["render"] }
+#bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", version = "0.5", default-features = false, features = ["render"] }
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "59bfbd3295ed34f7aec1d8339bab10a339877242",features = ["render"] }
 
 [dev-dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", version = "0.5", default-features = false, features = [
-    "render",
-    "bevy_wgpu",
-    "bevy_winit",
-    "bevy_gltf",
-    "x11",
-] }
+#bevy = { git = "https://github.com/bevyengine/bevy", branch = "main", version = "0.5", default-features = false, features = [
+#    "render",
+#    "bevy_wgpu",
+#    "bevy_winit",
+#    "bevy_gltf",
+#    "x11",
+#] }
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "59bfbd3295ed34f7aec1d8339bab10a339877242",features = ["render"] }
 criterion = "0.3"
 
 [[bench]]
